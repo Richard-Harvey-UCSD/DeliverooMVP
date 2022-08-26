@@ -69,6 +69,11 @@ const HomeScreen = () => {
         <Categories />
 
         {/* Featured Rows */}
+        <FeaturedRow 
+          title='Featured'
+          description='Featured is a collection of products and services that are used to build a product.'
+          featuredCategory=''
+        />
 
 
       </ScrollView>
