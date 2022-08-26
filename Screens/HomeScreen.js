@@ -10,6 +10,7 @@ import {
 } from 'react-native-heroicons/outline';
 
 import Categories from '../components/Categories';
+import FeaturedRow from '../components/FeaturedRow';
 
 
 const HomeScreen = () => {
@@ -25,7 +26,7 @@ const HomeScreen = () => {
     <SafeAreaView className='bg-white pt-5'>
 
       {/* Heading */}
-      <View className='flex-row pb-3 items-center mx-4 space-x-2 px-4'>
+      <View className='flex-row pb-3 items-center mx-4 space-x-2 px-0'>
         <Image
           source={{
             uri: 'https://links.papareact.com/wru'
@@ -45,7 +46,7 @@ const HomeScreen = () => {
       </View>
 
       {/* Search */}
-      <View className='flex-row items-center space-x-2 pb-2 mx-4 px-4'>
+      <View className='flex-row items-center space-x-2 pb-2 mx-4 px-0'>
         <View className='flex-row flex-1 space-x-2 bg-gray-200 p-3'>
           <MagnifyingGlassIcon color='gray' size={20} />
           <TextInput
@@ -68,11 +69,25 @@ const HomeScreen = () => {
         {/* Categories */}
         <Categories />
 
-        {/* Featured Rows */}
-        <FeaturedRow 
+        {/* Featured */}
+        <FeaturedRow
+          id='123'
           title='Featured'
-          description='Featured is a collection of products and services that are used to build a product.'
-          featuredCategory=''
+          description='Paid placements for out partners'
+        />
+
+        {/* Tasty Discounts */}
+        <FeaturedRow
+          id='1234'
+          title='Tasty Discounts'
+          description="Everyone's been enjoying these juicy discounts!"
+        />
+
+        {/* Offers near you */}
+        <FeaturedRow
+          id='12345'
+          title='Offers near you!'
+          description='Why not support your local restaurant tonight!'
         />
 
 
